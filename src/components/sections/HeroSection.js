@@ -6,13 +6,13 @@ function HeroSection() {
   return (
     <Wrapper>
       <ContentWrapper>
-        <img src="/images/logos/logo.svg" alt="logo" />
-        <h1>Learn and code cyber-security tools</h1>
-        <p>
-          Don't be caught off guard. Learn how to architect applications to
-          boost your security online.
-        </p>
-        <Link to="/page-2/">Go to page 2</Link> <br />
+        <TextWrapper>
+          <Title>Learn and code cyber-security tools</Title>
+          <Description>
+            Don't be caught off guard. Learn how to architect aplications to
+            boost your digital security.
+          </Description>
+        </TextWrapper>
       </ContentWrapper>
     </Wrapper>
   )
@@ -27,4 +27,19 @@ const ContentWrapper = styled.div`
   max-width: 1234px;
   margin: 0 auto; /* Left and Right use auto*/
   padding: 200px 30px;
+`
+
+const TextWrapper = styled.div`
+  max-width: 360px;
+  display: grid;
+  gap: 30px;
+`
+const Title = styled.h1`
+  font-weight: bold;
+  font-size: 60px;
+  color: white;
+`
+const Description = styled.p`
+  font-size: 17px;
+  line-height: 130%;
 `
